@@ -1,5 +1,14 @@
 @include aoa-bg-series($img__classes,$img__aoa,0,"center","cover","scroll");
+@media all and (max-width:991px), all and (orientation:portrait){
+    @include aoa-bg-series($img__classes--v,$img__aoa--v,0,"center","cover","scroll");
 
+}
+.about{
+    &-s1,&-s2{
+        background-color: #aaa!important;
+        background-blend-mode: multiply;
+    }
+}
 .bg{
     &-dark-blue{
         background-color: $color__blue--dark!important;
@@ -9,15 +18,44 @@
     &-dark-blue{
         border-color: $color__blue--dark!important;
     }
+}    
+.contact{
+    &-s1,&-s2{
+        background-color: #aaa!important;
+        background-blend-mode: multiply;
+    }
+}
+.index{
+    &-s1{
+        background-color: #aaa!important;
+        background-blend-mode: multiply;
+    }
 }
 .navbar{
     &-logo{
         height: $logo__height;
     }
 }
+.opacity{
+    &-9{
+        opacity:0.9!important;
+    }
+}
+.order{
+    &-s1{
+        background-color: #aaa!important;
+        background-blend-mode: multiply;
+    }
+}
 .privacy{
     &-s1{
         background-position-x: right!important;
+    }
+}
+.services{
+    &-s1{
+        background-color: #aaa!important;
+        background-blend-mode: multiply;
     }
 }
 .text{
@@ -28,8 +66,16 @@
         text-shadow: $text__shadow;
     }
 }
+h1,h2,h3,h4,h5,h6{
+    font-family:"Lobster";
+    letter-spacing: 2px;
+    opacity:0.9;
+}
 header{
     z-index: 10;
+}
+p,.nav-link{
+    font-family: "Roboto";
 }
 textarea{
     resize: none;
@@ -38,8 +84,8 @@ textarea{
     .navbar{
         &-nav{
             backdrop-filter: blur(5px); 
-            background-color: #fff;
-            border: 1px solid #999;
+            background-color: #0d6efd;
+            border: 1px solid #111;
             opacity: 0.9;
             padding: 10px;
         }
